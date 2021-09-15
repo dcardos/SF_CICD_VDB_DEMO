@@ -1,0 +1,45 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: . build/install.sh
+      - run:
+          name: Login to Dev
+          command: . build/login-dev.sh
+      - run:
+          name: Run Dev Local Tests
+          command: . build/test-dev.sh
+  deploy-uat:
+    docker:
+    - image: circleci/node:latest
+    steps:
+      - checkout
+      - run:
+          name: Install Dependencies
+          command: . build/install.sh
+      - run:
+          name: Login to dev
+          command: . build/login-dev.sh
+      - run:
+          name: Deploy to dev
+          command: . build/deploy-dev.sh
+workflows:
+  version: 2
+  validate:
+    jobs:
+      - build:
+          filters:
+            branches:
+              ignore:
+                - accOrg
+                - master
+      - deploy-uat:
+          filters:
+            branches:
+              only:
+                - accOrg
