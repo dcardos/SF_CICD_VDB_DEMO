@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>cardoso.nilo@gmail.com</contactEmail>
+    <label>Cicle_CI_Demo</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIDNDCCAhwCCQDtKnBZcTn9BjANBgkqhkiG9w0BAQsFADBcMQswCQYDVQQGEwJOTDESMBAGA1UEBwwJQW1zdGVyZGFtMRIwEAYDVQQKDAlWYW5kZWJyb24xJTAjBgkqhkiG9w0BCQEWFmNhcmRvc28ubmlsb0BnbWFpbC5jb20wHhcNMjEwOTE1MDczMDI2WhcNMjIwOTE1MDczMDI2WjBcMQswCQYDVQQGEwJOTDESMBAGA1UEBwwJQW1zdGVyZGFtMRIwEAYDVQQKDAlWYW5kZWJyb24xJTAjBgkqhkiG9w0BCQEWFmNhcmRvc28ubmlsb0BnbWFpbC5jb20wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCgMc0Q83kfamhwqBxzIIYMZ1saev7xX+fcnlef0naHfJhZ2LW4K9qIP8c9y2kHbsl9kpQl913XknhEUTSiq0w8hBVrBjDd9yxFg/U/5rGLWUuLU+OFRGLfNf1QqFZ1WoGVgFov2B5BQMQZuDsliK+dD1+VAKQho8F7UAR3I4gTwUSPkgUgBh06o8308iKH3xI+JJ2pPdu3OybEatvjLBI6hJvHqB3EdpcJVMahJ1vXCAkCup86KAwGi/mK0iLiUlkbxXdhd50c3d+7KQJROzJxV4CKUOixClm7ou2htxxuXdy5bO7OctJzUiRupS/IMPqF5zEFHJ6Qlzeo8ca0yhj9AgMBAAEwDQYJKoZIhvcNAQELBQADggEBAC9aSlZhC0bOW36rla7sZ31vhn0VTgUdbCTaLNYUog+mKtL1ZSZtxcmJzAe4jm5ETHk34UzkcRmhxBFCaTHwkdBIBqPDgFoi7QJXKY1XQxND7KdI340dguR6ztsUJJjIWviewINzxSW9S9ky5HCOVCG/AvZCRHdat9DUc9drj7CHS72gnjItrdFsZ4FR+O6AkHo+2QyiTz+N8+fKvsLD6ZNuSLgVI8z2gUdbZULSo8Bryi0tYuwhJID0jKq9UcngW9cxxPNZBg75i5KhXQG1VNIzBYqYSf3uFx+1x619rfZHS+p4m1I4fzXWxjWGkMC/wK3pbH2ytVsczNEV7MtVSDQ=</certificate>
+        <consumerKey>3MVG9SOw8KERNN09T0ub9VuhZcljAER6Hl2YJxZA7DKXdGsjbQ633OvMYp.gmwft6FCnxKCVh.GdgTVpnoPY5</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>
