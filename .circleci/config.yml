@@ -37,9 +37,10 @@ workflows:
             branches:
               ignore:
                 - accOrg
+                - release_2
                 - master
       - deploy-uat:
           filters:
             branches:
               only:
-                - accOrg
+                - release_2
