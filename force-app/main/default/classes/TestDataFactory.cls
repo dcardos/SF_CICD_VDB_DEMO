@@ -8,4 +8,6 @@ public class TestDataFactory {
     public static Contact createContact(String lastName, Id acctId, String phone, String department) {
         return new Contact(LastName = lastName, AccountId = acctId, Phone = phone, Department = department);
     }
+
+    //adding another comment
 }
